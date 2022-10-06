@@ -33,7 +33,7 @@ function App() {
   useEffect(() => {
     const loadData = async () => {
       try {
-        const playListData = await axios.get(`https://fierce-sierra-51136.herokuapp.com/api/get`)
+        const playListData = await axios.get(`https://klika-music-library-back.herokuapp.com/api/get`)
         setPlayList(playListData.data)
       } catch(error) {
         console.log(error)
